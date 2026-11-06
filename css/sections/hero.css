@@ -1,0 +1,124 @@
+.hero {
+  min-height: 610px;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 50px;
+  padding-block: 70px;
+}
+.status-dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-right: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 12px var(--accent);
+}
+.hero h1 {
+  margin: 10px 0 8px;
+  font: 700 clamp(2.6rem, 5vw, 4.2rem)/1.1 var(--font-heading);
+  letter-spacing: -2px;
+}
+.hero h2 {
+  margin: 0;
+  color: #c4cede;
+  font: 500 clamp(1.1rem, 2vw, 1.4rem) var(--font-heading);
+}
+.hero h2 b {
+  color: var(--accent);
+}
+.hero-description {
+  max-width: 570px;
+  margin: 20px 0 24px;
+  color: var(--muted);
+  font-size: 1.02rem;
+}
+.hero-actions,
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+.social-links {
+  margin-top: 28px;
+  gap: 18px;
+}
+.social-links a {
+  color: #9cacc1;
+  font-size: 1.25rem;
+}
+.social-links a:hover {
+  color: var(--accent);
+}
+.hero-visual {
+  position: relative;
+  min-height: 420px;
+  display: grid;
+  place-items: center;
+}
+.photo-frame {
+  position: relative;
+  z-index: 2;
+  width: 285px;
+  height: 340px;
+  padding: 11px;
+  border: 1px solid #476478;
+  border-radius: 24px;
+  background: #141f34;
+  box-shadow: var(--shadow);
+  transform: rotate(3deg);
+}
+.photo-frame img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+.floating-card {
+  position: absolute;
+  z-index: 3;
+  bottom: 22px;
+  left: -8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border: 1px solid #34465e;
+  border-radius: 12px;
+  background: var(--surface-raised);
+  box-shadow: var(--shadow);
+}
+.floating-icon {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border-radius: 10px;
+  color: var(--accent);
+  background: var(--accent-dark);
+}
+.floating-card strong,
+.floating-card small {
+  display: block;
+}
+.floating-card strong {
+  font-size: 0.86rem;
+}
+.floating-card small {
+  color: var(--muted);
+  font-size: 0.72rem;
+}
+.orbit {
+  position: absolute;
+  width: 380px;
+  aspect-ratio: 1;
+  border: 1px solid #23364b;
+  border-radius: 50%;
+}
+.orbit-two {
+  width: 440px;
+  border-style: dashed;
+  opacity: 0.5;
+}

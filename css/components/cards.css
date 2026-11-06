@@ -1,0 +1,31 @@
+.content-card,
+.experience-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.content-card {
+  padding: 24px;
+}
+.card-icon {
+  margin-bottom: 12px;
+  color: var(--accent);
+  font-size: 1.35rem;
+}
+.content-card h3 {
+  margin: 0 0 15px;
+  font: 600 1.08rem var(--font-heading);
+}
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.tag-list span {
+  padding: 5px 9px;
+  border: 1px solid #30425a;
+  border-radius: 6px;
+  background: #202e44;
+  color: #b8c5d7;
+  font-size: 0.75rem;
+}
